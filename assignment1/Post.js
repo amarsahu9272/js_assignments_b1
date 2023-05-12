@@ -1,4 +1,3 @@
-
 class Post {
     constructor(title, content, author, dateCreated) {
         this.title = title;

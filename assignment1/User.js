@@ -6,14 +6,16 @@ class User {
         this.dateOfBirth = dateOfBirth;
         this.location = location;
         this.profilePicture = profilePicture;
+        this.posts = [];
     }
+
 
     createUser() {
 
     }
 
-    createPost() {
-
+    createPost(post) {
+        this.posts.push(post);
     }
 
     likePost(post) {
