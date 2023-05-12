@@ -28,13 +28,13 @@ class User {
         this.posts.push(post);
     }
 
-    likePost(post) {
-        this.posts.push(post);
+    likePost(likePost) {
+        this.posts.push(likePost);
     }
 
 
 
-    commentPost(post, comment) {
-        this.posts.push(post);
+    commentPost(comment) {
+        this.posts.push(comment);
     }
 }
