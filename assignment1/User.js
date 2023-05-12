@@ -11,6 +11,16 @@ class User {
 
 
     createUser() {
+        let users;
+        return users.add({
+            name: this.name,
+            email: this.email,
+            password: this.password,
+            dateOfBirth: this.dateOfBirth,
+            location: this.location,
+            profilePicture: this.profilePicture
+        })
+
 
     }
 
@@ -19,10 +29,12 @@ class User {
     }
 
     likePost(post) {
-
+        this.posts.push(post);
     }
 
-    commentPost(post, comment) {
 
+
+    commentPost(post, comment) {
+        this.posts.push(post);
     }
 }
